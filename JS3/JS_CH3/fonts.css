@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Headache';
+    src: url(/fonts/Headache-Font-OTF.otf);
+}
+@font-face {
+    font-family: 'Potra';
+    src: url(/fonts/Potra.otf);
+}
+
+.headachefont{
+    font-family: 'Headache';
+    color: white;
+}
+.potrafont{
+    font-family: 'Potra';
+    color: white;
+}

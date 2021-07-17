@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
+    <!-- geocoder -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js">
+    </script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
+        type="text/css">
+
+    <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="/img/r_ico.png">
+
+    <title>MuskXLand</title>
+</head>
+
+<body onload="">
+
+    <div class="row p-5">
+
+        <div class="col-6 potrafont">
+            <div class="">
+                <div class="btn btn-outline-warning" onclick="newlocation()">New Location</div>
+
+                <div class="text-center">
+                    <span class="fs-2">Details</span>
+                </div>
+                <p class="mt-2">
+                    <div class="row fs-3">
+                        <div class="col">Asteroids</div>
+                        <div class="col text-end"><span id="asteroid"></span></div>
+                    </div>
+                    <div class="row fs-4">
+                        <div class="col">Name</div>
+                        <div class="col text-end"><span id="astname"></span></div>
+                    </div>
+                    <div class="row fs-4">
+                        <div class="col">Dangerous</div>
+                        <div class="col text-end"><span id="astdang"></span></div>
+                    </div>
+                </p>
+
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">Elevation</div>
+                        <div class="col text-end"><span id="elevation"></span></div>
+                    </div>
+                </p>
+
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">Travel distance</div>
+                        <div class="col text-end"><span id="td"></span></div>
+                    </div>
+                </p>
+
+                <p class="fs-3 pt-3">
+                    <div class="row fs-3">
+                        <div class="col">Location</div>
+                        <div class="col text-end">
+                            <span id="location">
+                                <span>Error</span>
+                            </span>
+                        </div>
+                    </div>
+                </p>
+
+                <p class="fs-3">
+                    <div class="row fs-3">
+                        <div class="col">Weather</div>
+                        <div class="col text-end">
+                            <span id="weather">
+                                <span>Error</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row fs-4">
+                        <div class="col">Temperature</div>
+                        <div class="col text-end">
+                            <span id="temperature">
+                                <span>Error</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row fs-4">
+                        <div class="col">Wind</div>
+                        <div class="col text-end">
+                            <span id="wind">
+                                <span>Error</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row fs-4">
+                        <div class="col">Local Time</div>
+                        <div class="col text-end">
+                            <span id="localtime">
+                                <span>Error</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fs-3 pt-4">Pubs nearby</div>
+                </p>
+
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6 text-center">
+            <div class="potrafont fs-1">
+                <div>
+                    <div class="row mx-5">
+                        <div class="fs-1">
+                            Landing site
+                        </div>
+                    </div>
+                </div>
+                <div id="map" class="rounded"></div>
+
+                <div class="text-center float-start">
+
+                    <div id="nasaearth">
+                        Picture Error
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="/owk.js"></script>
+    <script src="/javascript.js"></script>
+</body>
+
+</html>
